@@ -550,6 +550,9 @@ function Move-FFContainer{
     if(-not ($First -xor $Last -xor $up -xor $down)){
         throw "Error: You must include excactly one of (First, Last, Up, Down)"
     }
+    if(-not ($name -xor $ContextID)){
+        throw "Error: You must include excactly one of (Name, ContextID)"
+    }
     $jsonfile = "$script:connectedprofilepath\containers.json"
     $containers = get-content $jsonfile | convertfrom-json
 
