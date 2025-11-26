@@ -35,6 +35,8 @@ List of Functions:
 
 Connect-FFCProfile
 	This function finds all Firefox profiles and allows you to select one for editing.
+	Optional parameter: [string]ProfilePath
+	If you give the path to the profile folder, it will connect assuming there is a containers.json file inside.
 
 Get-FFCProfile
 	Returns the currently selected profile.
@@ -78,4 +80,5 @@ Move-FFContainer
 	This function lets you reorder the containers of the connected profile. You must include either the Name or usercontextID (ContextID) to be moved.
 	Optional parameters: [switch]First, [switch]Last, [Int]Up, [Int]Down
 	Using First or Last will move the container to the respective position. using Up or Down, you specify the number of positions to move the container in the respective direction.
+
 	I meant to make a [int]Position that would move it to the position given, but I guess I forgot. Maybe will add that.
