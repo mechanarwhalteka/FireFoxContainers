@@ -10,14 +10,15 @@ $Script:ConnectedProfile = ""
 $Script:ConnectedProfilePath = ""
 $Script:ColorList = @(
         "blue",
-        "turquoise",
+        "cyan",
         "green",
         "yellow",
         "orange",
         "red",
         "pink",
         "purple",
-        "toolbar"
+        "gray",
+	"black"
     )
 $Script:IconList = @(
         "fingerprint",
